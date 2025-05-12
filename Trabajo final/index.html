@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Trabajo Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-[Parkinsans] bg-[#b3a7c4] m-0 flex flex-col flex-wrap grow min-h-screen">
+    <header class="bg-[#1a0437] w-full z-40 m-0 h-14 sm:h-auto">
+        <nav class="w-full flex flex-row justify-between sm:justify-evenly bg-[#1a0437] items-center flex-wrap p-1 sm:p-4 gap-2 relative">
+            <!-- Logo de la inmobiliaria -->
+            <div class="bg-[#b3a7c4] w-[10%] p-1 mx-1 my-2 rounded-[10%] sm:w-28 sm:self-center sm:my-2">
+                    <img src="Imagenes/Silueta diseño logo inmobiliaria _ Vector Premium bien.png" alt="Logo de la empresa" class="w-full h-full">
+            </div>
+            <!-- Nombre de la inmobiliaria -->
+            <div class="text-[#b3a7c4] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[Eagle_Lake] sm:text-center sm:self-center sm:inline-block">
+                <p>CAVEST Inmobiliaria</p>
+            </div>
+            <!-- Datos relevantes -->
+            <div class="text-[#b3a7c4] flex-row flex-wrap self-center hidden sm:flex">
+                <div class="flex flex-row text-center m-auto">
+                    <i class="fa-solid fa-location-dot ml-1"></i>
+                    <p class="my-0 ml-1 mr-3">Ubicacion de la inmobiliaria</p>
+                </div>
+                <div class="flex flex-row text-center m-auto">
+                    <i class="fa-brands fa-whatsapp ml-1"></i>
+                    <p class="my-0 ml-1">WhatsApp: 3834121212</p>
+                </div>
+            </div>
+            <!-- icono del menu hamburguesa, se esconde cuando la resolucion es mayor a mobile-first -->
+            <label for="menu" class="text-[#b3a7c4] m-1 self-center sm:hidden hover:cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <!-- Checkbox que despliega el menu hamburguesa -->
+            <input type="checkbox" id="menu" class="hidden peer sm:hidden">
+            <!-- Lista que contiene las opciones del menu, cambia si la resolucion es mobile-first -->
+            <ul class="bg-[#c8bbdd] w-full h-0 absolute top-[56px] left-0 overflow-hidden flex justify-center items-center flex-col gap-4 transition-all duration-100 peer-checked:h-[calc(42vh-80px)] sm:static sm:h-auto sm:flex-row sm:justify-evenly sm:overflow-visible sm:bg-[#1a0437]">
+                <li>
+                    <a href="index.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Inicio</a>
+                </li>
+                <li>
+                    <a href="ventas.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Venta</a>
+                </li>
+                <li>
+                    <a href="alquiler.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Alquiler</a>
+                </li>
+                <li>
+                    <a href="tasaciones.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Tasaciones</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Contacto</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Portada Hero -->
+        <section class="bg-[url(/Imagenes/img_hero_de_inmobiliaria.jpg)] h-[40vh] sm:h-[60vh] w-full bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center p-4">
+            <!-- formulario que pregunte en que esta interesado el usuario, ESTE SERA EL UNICO FORMULARIO CON METODO GET, YA QUE LO CORRECTO ES ENVIARLO POR EL METODO POST -->
+            <form action="#" method="get" class="flex flex-col sm:flex-row justify-center items-center p-2 sm:p-5 rounded-xl bg-[#ffffff83] m-2 sm:m-5">
+                <label for="inmuebles" class="text-xl sm:text-3xl self-center text-center">¿En que inmueble lo podemos ayudar?</label>
+                <select name="tipo_de_inmuebles" id="inmuebles" class="text-base sm:text-xl p-1 cursor-pointer bg-[#b3a7c4] rounded-md text-center self-center mb-1 sm:my-[0px] mx-1 transition-[color, background-color] duration-150 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                    <option value="casas">Casas</option>
+                    <option value="dptos">Departamentos</option>
+                    <option value="cabañas">Cabañas</option>
+                    <option value="terrenos">Terrenos</option>
+                    <option value="locales">Locales</option>
+                    <option value="oficinas">Oficinas</option>
+                    <option value="depositos">Depositos</option>
+                    <option value="edificios">Edificios</option>
+                </select>
+                <input type="submit" value="Buscar" class="text-base sm:text-xl p-1 cursor-pointer bg-[#b3a7c4] rounded-md transition-[color, background-color] duration-150 focus:bg-[#1a0437] focus:text-[#b3a7c4] text-center self-center">
+            </form>
+        </section>
+        <section>
+            <!-- En esta seccion se muestra un texto de bienvenida y una grilla de botones que deberian desplegar otros divs o secciones con los inmuebles correspondientes, pero no lo hice porque no vimos JS -->
+            <div class="flex flex-col flex-wrap grow justify-center items-center w-4/5 h-max bg-[#ffffff85] my-14 mx-auto p-5">
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl text-center">BIENVENIDO A CAVEST Inmobiliaria</h1>
+                <p class="text-base my-5">
+                    Este es nuestro sitio web donde podrás encontrar tu inmueble de ensueños, casas, departamentos, terrenos, edificios, oficinas, cabañas, depositos, locales y mucho más.
+                    Somos un equipo con mucha trayectoria y experiencia que te brindará la mejor atención y asesoría a la hora de tu consulta. <br><br>
+                    No dudes en contactarnos y te ayudaremos a la brevedad. <i><a href="contacto.html" class="text-[#1a0437] underline">Contacto</a></i>
+                </p>
+                <div class="bg-[#ffffff] my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 w-full p-1">
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/casa.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Casas</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/dpto.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Departamentos</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/cabaña.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Cabañas</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/terreno.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Terrenos</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/local.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Locales</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/oficina.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Oficinas</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/depositos.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Depositos</button>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full aspect-square text-lg p-1 rounded-lg bg-[url(/Imagenes/edificio.jpg)] bg-no-repeat bg-cover bg-center relative text-[#ffffff] grayscale-[0.3] transition-[filter, font-size] duration-100 text-shadow-[2px_2px_1px_#000000] hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-2xl">Edificios</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#1a0437] w-full mt-auto relative">
+        <div class="w-full h-[96%] flex flex-row justify-around flex-wrap">
+            <div class="w-80 h-80 self-center">
+                <img src="Imagenes/Silueta diseño logo inmobiliaria _ Vector Premium bien.png" alt="Logo de la empresa">
+            </div>
+            <div class="text-[#b3a7c4] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[Eagle_Lake] text-center self-center">
+                <p>CAVEST Inmobiliaria</p>
+            </div>
+            <div class="text-[#b3a7c4] m-3 self-center flex flex-col">
+                <p><i class="fa-solid fa-location-dot"></i> Ubicacion fisica de la inmobiliaria</p>
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 3834121212</p>
+                <p><i class="fa-solid fa-envelope"></i> Correo: joaquincaviedes3@gmail.com</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram: Instagram de la inmobiliaria</p>
+            </div>
+        </div>
+        <small class="text-[#b3a7c4]">Todos los derechos reservados &copy; Caviedes Estrada Joaquin - 2025</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Trabajo Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-[Parkinsans] bg-[#b3a7c4] m-0 flex flex-col flex-wrap grow min-h-screen">
+    <header class="bg-[#1a0437] w-full z-40 m-0 h-14 sm:h-auto">
+        <nav class="w-full flex flex-row justify-between sm:justify-evenly bg-[#1a0437] items-center flex-wrap p-1 sm:p-4 gap-2 relative">
+            <div class="bg-[#b3a7c4] w-[10%] p-1 mx-1 my-2 rounded-[10%] sm:w-28 sm:self-center sm:my-2">
+                    <img src="Imagenes/Silueta diseño logo inmobiliaria _ Vector Premium bien.png" alt="Logo de la empresa" class="w-full h-full">
+            </div>
+            <div class="text-[#b3a7c4] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[Eagle_Lake] sm:text-center sm:self-center sm:inline-block">
+                <p>CAVEST Inmobiliaria</p>
+            </div>
+            <div class="text-[#b3a7c4] flex-row flex-wrap self-center hidden sm:flex">
+                <div class="flex flex-row text-center m-auto">
+                    <i class="fa-solid fa-location-dot ml-1"></i>
+                    <p class="my-0 ml-1 mr-3">Ubicacion de la inmobiliaria</p>
+                </div>
+                <div class="flex flex-row text-center m-auto">
+                    <i class="fa-brands fa-whatsapp ml-1"></i>
+                    <p class="my-0 ml-1">WhatsApp: 3834121212</p>
+                </div>
+            </div>
+            <label for="menu" class="text-[#b3a7c4] m-1 self-center sm:hidden hover:cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu" class="hidden peer sm:hidden">
+            <ul class="bg-[#c8bbdd] w-full h-0 absolute top-[56px] left-0 overflow-hidden flex justify-center items-center flex-col gap-4 transition-all duration-100 peer-checked:h-[calc(42vh-80px)] sm:static sm:h-auto sm:flex-row sm:justify-evenly sm:overflow-visible sm:bg-[#1a0437]">
+                <li>
+                    <a href="index.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Inicio</a>
+                </li>
+                <li>
+                    <a href="ventas.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Venta</a>
+                </li>
+                <li>
+                    <a href="alquiler.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Alquiler</a>
+                </li>
+                <li>
+                    <a href="tasaciones.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Tasaciones</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Contacto</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex flex-wrap justify-start items-center bg-[#ffffff4d] px-4 py-2 sm:px-6">
+                <small><i><a href="index.html" class="text-[#1a0437] underline">Inicio</a></i></small>
+                <small class="mx-1">></small>
+                <small>Tasaciones</small>
+            </div>
+        <!-- Portada Hero -->
+        <section class="w-full m-0 flex flex-col sm:flex-row justify-center items-star sm:justify-start">
+            <div class="bg-[url(/Imagenes/tasaciones.jpg)] h-[20vh] sm:h-[70vh] w-full bg-no-repeat bg-cover bg-bottom rounded-b-full flex flex-col justify-center items-center sm:rounded-r-full sm:rounded-bl-none sm:w-[50%]">
+                <p class="bg-[#ffffff4d] rounded-lg text-lg text-center p-1 text-shadow-[1px_1px_7px_#ffffff] sm:text-3xl">Tasaciones profesionales</p>
+            </div>
+            <div class="m-auto w-[80%] sm:w-[40%] my-2 flex flex-col justify-center items-center">
+                <hr class="border-solid border-1 border-[#ffffff] w-full">
+                <p class="text-xs text-center my-1 sm:text-base">
+                    <i><b>Nos destacamos en realizar tasaciones profesionales, elaboradas por un equipo que estudia y analiza el mercado y la situación economica constantemente, trabajamos para sacar 
+                    el máximo potencial de su próxima operación inmobiliaria.</b></i>
+                </p>
+                <hr class="border-solid border-1 border-[#ffffff] w-full">
+                <p class="text-xs text-center my-1 sm:text-base">
+                    Para realizar una tasación, usted tiene que llenar el siguiente formulario para que un profesional de Cavest Inmobiliaria se ponga en contacto. De esta manera 
+                    podremos satisfacer todas sus necesidades y contestar todas sus preguntas.
+                </p>
+                <hr class="border-solid border-1 border-[#ffffff] w-full">
+                <form action="index.html" method="post" class="w-full m-auto flex flex-col justify-between items-center p-2 sm:w-[60%]">
+                    <label for="nombre" class="text-xs text-center mb-0 sm:text-base">Nombre completo *</label>
+                    <input type="text" maxlength="70" placeholder="Ingrese su nombre completo" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-xs mb-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4] sm:text-base" required>
+                    <label for="mail" class="text-xs text-center mb-0 sm:text-base">Correo electrónico *</label>
+                    <input type="email" minlength="10" placeholder="Ingrese su correo electrónico" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-xs mb-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4] sm:text-base" required>
+                    <label for="telefono" class="text-xs text-center mb-0 sm:text-base">Telefono *</label>
+                    <input type="number" max="20" min="10" placeholder="Ingrese su numero de telefono" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-xs mb-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4] sm:text-base" required>
+                    <input type="text" minlength="5" maxlength="100" placeholder="Ingrese su dirección" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-xs mb-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4] sm:text-base">
+                    <textarea name="comentario" id="comentario" placeholder="Su comentario" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] h-32 rounded text-xs mb-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4] sm:text-base"></textarea>
+                    <input type="submit" value="Buscar" class="text-baxs sm:text-xl p-1 cursor-pointer bg-[#1a0437] text-[#b3a7c4] rounded-md transition-[color, background-color] duration-150 focus:bg-[#b3a7c4] focus:text-[#1a0437] text-center self-center">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#1a0437] w-full mt-auto relative">
+        <div class="w-full h-[96%] flex flex-row justify-around flex-wrap">
+            <div class="w-80 h-80 self-center">
+                <img src="Imagenes/Silueta diseño logo inmobiliaria _ Vector Premium bien.png" alt="Logo de la empresa">
+            </div>
+            <div class="text-[#b3a7c4] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[Eagle_Lake] text-center self-center">
+                <p>CAVEST Inmobiliaria</p>
+            </div>
+            <div class="text-[#b3a7c4] m-3 self-center flex flex-col">
+                <p><i class="fa-solid fa-location-dot"></i> Ubicacion fisica de la inmobiliaria</p>
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 3834121212</p>
+                <p><i class="fa-solid fa-envelope"></i> Correo: joaquincaviedes3@gmail.com</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram: Instagram de la inmobiliaria</p>
+            </div>
+        </div>
+        <small class="text-[#b3a7c4]">Todos los derechos reservados &copy; Caviedes Estrada Joaquin - 2025</small>
+    </footer>
+</body>
+</html>

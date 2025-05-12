@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    color: #3f3f3f;
+    margin: 0px;
+    font-size: 14px;
+}
+
+h1, h2{
+    margin: 0px;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 4px black;
+}
+header, footer{
+    font-size: 1.5em;
+    background-color: #e72727;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+}
+main{
+    background-color: #e4e3e3;
+    padding: 15px;
+}
+section{
+    background-color: #e72727;
+    color: #ffc7c7;
+    font-family: "Lilita One", sans-serif;
+    font-size: 1.2em;
+    padding: 15px;
+}
+article{
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cursiv{
+    font-family: cursive;
+}
+.georgia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.fant{
+    font-family: fantasy;
+}
+.times{
+    font-family: 'Times New Roman', Times, serif;
+}
+.monos{
+    font-family: monospace;
+}
+.open{
+    font-family: "Open Sans", sans-serif;
+}
+.peque{
+    font-size: small;
+}
+.medium{
+    font-size: medium;
+}
+.grande{
+    font-size: large;
+}
+.mas-grande{
+    font-size: xx-large;
+}
+.och{
+    font-size: 8px;
+}
+.diz{
+    font-size: 10px;
+}
+.dseis{
+    font-size: 18px;
+}
+.vtr{
+    font-size: 24px;
+}
+.trei{
+    font-size: 30px;
+}
+.mitad{
+    font-size: 0.5em;
+}
+.uno{
+    font-size: 1em;
+}
+.ymedio{
+    font-size: 1.5em;
+}
+.doble{
+    font-size: 2em;
+}
+.triple{
+    font-size: 3em;
+}
+.grosor-100{
+    font-weight: 100;
+    font-family: "Open Sans";
+    font-size: medium;
+}
+.grosor-300{
+    font-weight: 300;
+    font-family: "Open Sans";
+    font-size: 1.5em;
+}
+.grosor-600{
+    font-weight: 600;
+    font-family: "Open Sans";
+    font-size: 1.5em;
+}
+.grosor-800{
+    font-weight: 800;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+.italic:nth-child(2){
+    font-weight: 100;
+    font-family: "Roboto";
+    font-size: medium;
+    font-style: italic;
+}
+.italic:nth-child(3){
+    font-weight: 300;
+    font-family: "Roboto";
+    font-size: 1.5em;
+    font-style: italic;
+}
+.italic:nth-child(4){
+    font-weight: 600;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-style: italic;
+}
+.italic:nth-child(5){
+    font-weight: 800;
+    font-family: "Roboto";
+    font-size: xx-large;
+    font-style: italic;
+}
+.var-normal{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: normal;
+    font-size: large;
+}
+.var-smallcaps{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant:small-caps;
+    font-size: large;
+}
+.transf-normal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: italic;
+    text-transform: none;
+}
+.transf-capit{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: italic;
+    text-transform:capitalize;
+}
+.transf-lower{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: italic;
+    text-transform:lowercase;
+}
+.transf-upper{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: italic;
+    text-transform:uppercase;
+}
+.indent75{
+    text-indent: 75px;
+    font-weight: 300;
+    font-family: "Roboto";
+    font-size: 1.5em;
+}
+.indent3{
+    text-indent: 4em;
+    font-weight: 300;
+    font-family: "Roboto";
+    font-size: 1.5em;
+}
+.t-left{
+    text-align: left;
+    font-weight: 300;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+.t-right{
+    text-align: right;
+    font-weight: 300;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+.t-center{
+    text-align: center;
+    font-weight: 300;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+.t-justify{
+    text-indent: 75px;
+    text-align: justify;
+    font-weight: 300;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+.line-normal{
+    line-height: normal;
+}
+.line-px24{
+    line-height: 24px;
+}
+.line-percent{
+    line-height:150%;
+}
+.line-relative{
+    line-height: 2.5em;
+}
+.wspacing-normal{
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+    word-spacing: normal;
+}
+.wspacing-posit{
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+    word-spacing: 8px;
+}
+.wspacing-nega{
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+    word-spacing: -2px;
+}
+.lspacing-normal{
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+    letter-spacing: normal;
+}
+.lspacing-posit{
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+    letter-spacing: 8px;
+}
+.lspacing-nega{
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+    word-spacing: -2px;
+}
+.tdecor-none{
+    font-size: 18px;
+    text-decoration: none;
+}
+.overline{
+    font-size: small;
+    text-decoration: overline;
+}
+.through{
+    font-size: 24px;
+    text-decoration: line-through;
+}
+.underline{
+    font-size: 18pxl;
+    text-decoration: underline;
+}
+.underline-solid{
+    font-size: 24px;
+    text-decoration: underline solid;
+}
+.underline-dotted{
+    font-size: 18px;
+    text-decoration: underline dotted;
+}
+.underline-double{
+    font-size: medium;
+    text-decoration: underline double;
+}
+.underline-dashed{
+    font-size: 18pxl;
+    text-decoration: underline dashed;
+}
+.underline-wavy{
+    font-size: 18px;
+    text-decoration: underline wavy;
+}
+.underline-red{
+    font-size: 18px;
+    text-decoration: underline solid red;
+}
+.underline-blue{
+    font-size: xx-large;
+    text-decoration: underline dotted blue;
+}
+.underline-orange{
+    font-size: large;
+    text-decoration: underline double orange;
+}
+.underline-green{
+    font-size: 18pxl;
+    text-decoration: underline dashed green;
+}
+.underline-blueviolet{
+    font-size: 18px;
+    text-decoration: underline wavy blueviolet;
+}
+.shadow1{
+    font-family: "Russo One";
+    color: orange;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 5px grey;
+}
+.shadow2{
+    font-family: "Tahoma";
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px black;
+}
+.shadow3{
+    font-family: "Open Sans";
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 2px hotpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Trabajo Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="font-[Parkinsans] bg-[#b3a7c4] m-0 flex flex-col grow min-h-screen">
+    <header class="bg-[#1a0437] w-full z-40 m-0 h-14 sm:h-auto">
+        <nav class="w-full flex flex-row justify-between sm:justify-evenly bg-[#1a0437] items-center flex-wrap p-1 sm:p-4 gap-2 relative">
+            <div class="bg-[#b3a7c4] w-[10%] p-1 mx-1 my-2 rounded-[10%] sm:w-28 sm:self-center sm:my-2">
+                    <img src="Imagenes/Silueta diseño logo inmobiliaria _ Vector Premium bien.png" alt="Logo de la empresa" class="w-full h-full">
+            </div>
+            <div class="text-[#b3a7c4] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[Eagle_Lake] sm:text-center sm:self-center sm:inline-block">
+                <p>CAVEST Inmobiliaria</p>
+            </div>
+            <div class="text-[#b3a7c4] flex-row flex-wrap self-center hidden sm:flex">
+                <div class="flex flex-row text-center m-auto">
+                    <i class="fa-solid fa-location-dot ml-1"></i>
+                    <p class="my-0 ml-1 mr-3">Ubicacion de la inmobiliaria</p>
+                </div>
+                <div class="flex flex-row text-center m-auto">
+                    <i class="fa-brands fa-whatsapp ml-1"></i>
+                    <p class="my-0 ml-1">WhatsApp: 3834121212</p>
+                </div>
+            </div>
+            <label for="menu" class="text-[#b3a7c4] m-1 self-center sm:hidden hover:cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu" class="hidden peer sm:hidden">
+            <ul class="bg-[#c8bbdd] w-full h-0 absolute top-[56px] left-0 overflow-hidden flex justify-center items-center flex-col gap-4 transition-all duration-100 peer-checked:h-[calc(42vh-80px)] sm:static sm:h-auto sm:flex-row sm:justify-evenly sm:overflow-visible sm:bg-[#1a0437]">
+                <li>
+                    <a href="index.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Inicio</a>
+                </li>
+                <li>
+                    <a href="ventas.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Venta</a>
+                </li>
+                <li>
+                    <a href="alquiler.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Alquiler</a>
+                </li>
+                <li>
+                    <a href="tasaciones.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Tasaciones</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Contacto</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" class=" text-[#1a0437] sm:text-[#b3a7c4] text-xs sm:text-base md:text-base lg:text-lg transition-[color, font-size, text-shadow] duration-150 hover:text-[#ffffff] hover:text-[1.4rem] hover:text-shadow-[2px_2px_1px_#000000]">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="m-3 grow">
+        <section>
+            <div class="flex flex-wrap justify-start items-center bg-[#ffffff4d] px-4 py-2 sm:px-6">
+                <small><i><a href="index.html" class="text-[#1a0437] underline">Inicio</a></i></small>
+                <small class="mx-1">></small>
+                <small>En venta</small>
+            </div>
+            <div class="text-center p-4 sm:p-8">
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#1a0437] text-shadow-[1px_1px_3px_#ffffff]">Inmuebles en venta</h1>
+            </div>
+        </section>
+        <section>
+            <div class="m-auto w-full flex flex-col flex-wrap grow justify-center items-center gap-3">
+                <form action="index.html" method="post" class="w-[80%] m-auto flex flex-col justify-between items-center sm:w-[20%] self-start">
+                    <input type="text" maxlength="1000" placeholder="Ingrese una dirección, calle o Av." class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-sm my-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                    <input type="number" min="0" placeholder="Precio mínimo" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-sm my-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                    <input type="number" min="min" placeholder="Precio máximo" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-sm my-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                    <div class="w-[80%] flex flex-row">
+                        <label for="inmuebles" class="text-sm text-center mb-0 mr-1">Tipo</label>
+                        <select name="tipo_de_inmuebles" id="inmuebles" class="text-sm w-full cursor-pointer bg-[#ffffff4d] rounded-md text-center mb-1 transition-[color, background-color] duration-150 focus:bg-[#1a0437] focus:text-[#b3a7c4]" required>
+                            <option value="casas">Casas</option>
+                            <option value="dptos">Departamentos</option>
+                            <option value="cabañas">Cabañas</option>
+                            <option value="terrenos">Terrenos</option>
+                            <option value="locales">Locales</option>
+                            <option value="oficinas">Oficinas</option>
+                            <option value="depositos">Depositos</option>
+                            <option value="edificios">Edificios</option>
+                        </select>
+                    </div>
+                    <div class="w-[80%] flex flex-row">
+                        <label for="moneda" class="text-sm text-center mb-0 mr-1">Moneda</label>
+                        <select name="tipo_de_moneda" id="moneda" class="text-sm w-full cursor-pointer bg-[#ffffff4d] rounded-md text-center mb-1 transition-[color, background-color] duration-150 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                            <option value="dolar"> Dolar</option>
+                            <option value="pesos_arg">Pesos ARG</option>
+                        </select>
+                    </div>
+                    <input type="number" min="1" max="30" placeholder="Habitaciones" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-sm my-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                    <input type="number" min="1" max="10" placeholder="Baños" class="bg-[#ffffff4d] border border-[#1a0437] w-[80%] rounded text-sm my-1 p-1 focus:bg-[#1a0437] focus:text-[#b3a7c4]">
+                    <input type="submit" value="Buscar" class="text-base sm:text-xl p-1 cursor-pointer bg-[#1a0437] text-[#b3a7c4] rounded-md transition-[color, background-color] duration-150 focus:bg-[#b3a7c4] focus:text-[#1a0437] text-center self-center">
+                </form>
+                <div class="my-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-[80%] p-1 sm:w-[50%] sm:my-0">
+                    <div class="w-full border-t-4 mb-3 box-border transition-[border] duration-100 hover:border-2 border-[#1a0437] rounded-lg">
+                        <button class="w-full aspect-square text-lg p-1 rounded-b-xl bg-[url(/Imagenes/vivienda.jpg)] bg-no-repeat bg-cover bg-center text-[#ffffff] text-shadow-[2px_2px_1px_#000000] relative grayscale-[0.3] transition-[filter, font-size] duration-100 hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-xl">Consultar precio</button>
+                        <div class="p-3">
+                            <p> 
+                                <h2 class="ml-1 text-lg font-semibold">Vivienda p/ 3 o 4 personas</h2>
+                                <hr>
+                                <small><i class="fa-solid fa-location-dot ml-1"></i> Ubicación - Valle chico, Calle 8 N°344</small>
+                                <br>
+                                <small><i class="fa-solid fa-bed ml-1"></i> Dormitorios - 2</small>
+                                <br>
+                                <small><i class="fa-solid fa-toilet ml-1"></i> Baños - 1</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full border-t-4 mb-3 box-border transition-[border] duration-100 hover:border-2 border-[#1a0437] rounded-lg">
+                        <button class="w-full aspect-square text-lg p-1 rounded-b-xl bg-[url(/Imagenes/Baldio_en_venta.jpg)] bg-no-repeat bg-cover bg-center text-[#ffffff] text-shadow-[2px_2px_1px_#000000] relative grayscale-[0.3] transition-[filter, font-size] duration-100 hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-xl">Consultar precio</button>
+                        <div class="p-3">
+                            <p> 
+                                <h2 class="ml-1 text-lg font-semibold">Lote 50x30 m2</h2>
+                                <hr>
+                                <small><i class="fa-solid fa-location-dot ml-1"></i> Ubicación - Gral. Lavalle 560</small>
+                                <br>
+                                <small><i class="fa-solid fa-arrows-up-down-left-right"></i> 50m de largo x 30m de ancho</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full border-t-4 mb-3 box-border transition-[border] duration-100 hover:border-2 border-[#1a0437] rounded-lg">
+                        <button class="w-full aspect-square text-lg p-1 rounded-b-xl bg-[url(/Imagenes/Baldio_en_venta2.jpg)] bg-no-repeat bg-cover bg-center text-[#ffffff] text-shadow-[2px_2px_1px_#000000] relative grayscale-[0.3] transition-[filter, font-size] duration-100 hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-xl">Consultar precio</button>
+                        <div class="p-3">
+                            <p> 
+                                <h2 class="ml-1 text-lg font-semibold">Lote 45x26 m2</h2>
+                                <hr>
+                                <small><i class="fa-solid fa-location-dot ml-1"></i> Ubicación - Ignacio de aguero 648</small>
+                                <br>
+                                <small><i class="fa-solid fa-arrows-up-down-left-right"></i> 45m de largo x 26m de ancho</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full border-t-4 mb-3 box-border transition-[border] duration-100 hover:border-2 border-[#1a0437] rounded-lg">
+                        <button class="w-full aspect-square text-lg p-1 rounded-b-xl bg-[url(/Imagenes/depa_en_venta.jpg)] bg-no-repeat bg-cover bg-center text-[#ffffff] text-shadow-[2px_2px_1px_#000000] relative grayscale-[0.3] transition-[filter, font-size] duration-100 hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-xl">Consultar precio</button>
+                        <div class="p-3">
+                            <p> 
+                                <h2 class="ml-1 text-lg font-semibold">Departamento 2 ambientes</h2>
+                                <hr>
+                                <small><i class="fa-solid fa-location-dot ml-1"></i> Ubicación - Ayacucho 892</small>
+                                <br>
+                                <small><i class="fa-solid fa-bed ml-1"></i> Dormitorios - 1</small>
+                                <br>
+                                <small><i class="fa-solid fa-toilet ml-1"></i> Baños - 1</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full border-t-4 mb-3 box-border transition-[border] duration-100 hover:border-2 border-[#1a0437] rounded-lg">
+                        <button class="w-full aspect-square text-lg p-1 rounded-b-xl bg-[url(/Imagenes/deposito_en_venta.jpg)] bg-no-repeat bg-cover bg-center text-[#ffffff] text-shadow-[2px_2px_1px_#000000] relative grayscale-[0.3] transition-[filter, font-size] duration-100 hover:cursor-pointer hover:grayscale-0 hover:contrast-[1.2] hover:text-xl">Consultar precio</button>
+                        <div class="p-3">
+                            <p> 
+                                <h2 class="ml-1 text-lg font-semibold">Galpón 96x64 m2</h2>
+                                <hr>
+                                <small><i class="fa-solid fa-location-dot ml-1"></i> Ubicación - La estancita</small>
+                                <br>
+                                <small><i class="fa-solid fa-arrows-up-down-left-right"></i> 96m de largo x 64m de ancho x 15m de alto</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#1a0437] w-full mt-auto relative">
+        <div class="w-full h-[96%] flex flex-row justify-around flex-wrap">
+            <div class="w-80 h-80 self-center">
+                <img src="Imagenes/Silueta diseño logo inmobiliaria _ Vector Premium bien.png" alt="Logo de la empresa">
+            </div>
+            <div class="text-[#b3a7c4] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[Eagle_Lake] text-center self-center">
+                <p>CAVEST Inmobiliaria</p>
+            </div>
+            <div class="text-[#b3a7c4] m-3 self-center flex flex-col">
+                <p><i class="fa-solid fa-location-dot"></i> Ubicacion fisica de la inmobiliaria</p>
+                <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 3834121212</p>
+                <p><i class="fa-solid fa-envelope"></i> Correo: joaquincaviedes3@gmail.com</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram: Instagram de la inmobiliaria</p>
+            </div>
+        </div>
+        <small class="text-[#b3a7c4]">Todos los derechos reservados &copy; Caviedes Estrada Joaquin - 2025</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reclamo</title>
+    <style>
+        body{
+            background-color: #69afd0;
+        }
+        .container_header{
+            background-color: #000e14;
+            width: 100;
+            height: 250px;
+        }
+        .container_img_header{
+            background-color: #40bcf1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin: 0%;
+        }
+        .container_img_header img{
+            width: 150px;
+            height: 150px;
+            align-self: center;
+        }
+        .container_img_header figcaption{
+            align-self: center;
+        }
+        .container_reclamo{
+            background-color: rgba(240, 248, 255, 0.418);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container_reclamo h2{
+            margin-top: 0px;
+            text-align: center;
+        }
+        .formulario{
+            margin: auto;
+        }
+        #reclamo{
+            width: 80%;
+            height: 100px
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="container_header">
+        <figure class="container_img_header">
+            <img src="Logo_Nodo.jpg" alt="Nodo Tecnologico Catamarca">
+            <figcaption><h3>Nodo Tecnológico</h3></figcaption>
+        </figure>
+    </header>
+    <main>
+        <h1>Reclamo</h1>
+        <section class="container_reclamo">
+            <h2>Ingrese los siguientes datos para una mejor atención:</h2>
+            <form action="reclamo_recibido.html" method="get" class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <br>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" required>
+                <br>
+                <br>
+                <label for="cliente_id">ID cliente:</label>
+                <input type="number" name="cliente_id" id="cliente_id" placeholder="'ID propuesta por el sistema'" disabled>
+                <br>
+                <br>
+                <label for="tipo_id">Tipo de documento:</label>
+                <select name="tipo_id" id="tipo_id" required>
+                    <option value="dni">DNI</option>
+                    <option value="lc">LC</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+                <br>
+                <br>
+                <label for="nro_id">N° de documento:</label>
+                <input type="number" name="nro_id" id="nro_id" required>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" required>
+                <br>
+                <br>
+                <label for="genero:">Genero:</label>
+                <br>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label><br>
+                <input type="radio" id="otro" name="genero" value="otro">
+                <label for="otro">Otro</label>
+                <br>
+                <br>
+                <label for="fecha_reclamo">Fecha del reclamo:</label>
+                <input type="date" id="fecha_reclamo" name="fecha_reclamo" required>
+                <br>
+                <br>
+                <label for="reclamo">Descripción:</label>
+                <textarea name="reclamo" id="reclamo" placeholder="Describa su problema y haga su descargo. Lo atenderemos a la brevedad." required></textarea>
+                <br>
+                <br>
+                <label for="pruebas">Adjuntar pruebas:</label>
+                <input type="file">
+                <br>
+                <br>
+                <input type="reset" name="cancelar">
+                <input type="submit" name="aceptar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

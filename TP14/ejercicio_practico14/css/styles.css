@@ -1,0 +1,169 @@
+/* ***************************************************************
+    Aquí, todos los estilos necesarios para realizar el ejercicio
+**************************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    color: #3f3f3f;
+}
+
+h1, h2{
+    margin: 0px;
+}
+
+header, footer{
+    font-family: "Bungee", sans-serif;
+    font-size: 1.5em;
+    background-color: #BBB100;
+    padding: 25px;
+    color: #FFFFBB;
+    text-align: center;
+}
+
+main{
+    background-color: #E9E9E9;
+    padding: 20px;
+}
+
+section{
+    background-color: #BBB100;
+    color: #FFFFBB;
+    font-family: "Lalezar", system-ui;
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+article{
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+
+.tdecor-none{
+    font-size: 18px;
+    text-decoration: none;
+}
+.overline{
+    font-size: small;
+    text-decoration: overline;
+}
+.over_under{
+    font-size: 18px;
+    text-decoration: overline underline;
+}
+.through{
+    font-size: 24px;
+    text-decoration: line-through;
+}
+.underline{
+    font-size: 18pxl;
+    text-decoration: underline;
+}
+.underline-solid{
+    font-size: 24px;
+    text-decoration: underline solid;
+}
+.underline-dotted{
+    font-size: 18px;
+    text-decoration: underline dotted;
+}
+.underline-double{
+    font-size: medium;
+    text-decoration: underline double;
+}
+.underline-dashed{
+    font-size: 18pxl;
+    text-decoration: underline dashed;
+}
+.underline-wavy{
+    font-size: 18px;
+    text-decoration: underline wavy;
+}
+.underline-red{
+    font-size: 18px;
+    text-decoration: underline solid red;
+}
+.underline-blue{
+    font-size: xx-large;
+    text-decoration: underline dotted blue;
+}
+.underline-orange{
+    font-size: large;
+    text-decoration: underline double orange;
+}
+.underline-green{
+    font-size: 18pxl;
+    text-decoration: underline dashed green;
+}
+.underline-blueviolet{
+    font-size: 18px;
+    text-decoration: underline wavy blueviolet;
+}
+
+
+.shadow1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 5px grey;
+}
+.shadow2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+}
+.shadow3{
+    font-family: "fantasy";
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 2px hotpink;
+}
+
+
+.b-radius1{
+    border-radius: 1px;
+    border: 5px inset #cacaca;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.b-radius2{
+    border-radius: 2px;
+    border: 5px inset #cacaca;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.b-radius3{
+    border-radius: 3px;
+    border: 5px inset #cacaca;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.b-radius4{
+    border-radius: 4px;
+    border: 5px inset #cacaca;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.ta-right{
+    border: 3px groove #cacaca;
+    border-top-right-radius: 20px;
+}
+
+
+
+
