@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <p>
+        <h1>Ejercicio 16</h1>
+            Realizar un programa que permita ingresar el importe total de una compra y aplicar descuentos según  <br>
+            los totales de compra.  <br>
+            Si el monto es menor a $10.000, no tiene descuento.  <br>
+            Si el monto está entre $10.000 y $50.000, se aplica un 10% de descuento.  <br>
+            Si el monto es mayor a $50.000, se aplica un 20% de descuento.  <br><br>
+            Nota: puede construir una arrow function que reciba como parámetro el importe total y que retorne el  <br>
+            descuento.  <br>
+            Mostrar el importe final a pagar luego del descuento. <br>
+    </p>
+
+    <section style="background-color: #80be95; width:800px; height:500px">
+        <label for="ingresar_importe">Ingrese el importe de la compra: </label>
+        <input type="number" id="ingresar_importe" min="0">
+        <input type="button" value="Calcular total" id="btn_calcular">
+        <p id="resultado">
+
+        </p>
+    </section>
+
+    <script type="module" src="./Ejercicio16_vista.js"></script>
+</body>
+</html>

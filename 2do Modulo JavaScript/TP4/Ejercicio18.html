@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+<body>
+    
+    <h1>ejercicio 18</h1>
+    <p>
+        Un profesor de programación tiene 4 curso o cohortes, en donde en cada cohorte existen alumnos <br>
+        diferentes que cursaron su módulo de “fundamentos de programación con JavaScript”, el profesor tiene en un <br>
+        vector diferente los alumnos y sus notas finales del cursado. “Se aprueba con notas > 4”. El listado de alumnos <br>
+        es el siguiente: <br><br>
+
+        const cohorte01 = [ <br>
+            { dni: "12345678", nombre: "Juan", apellido: "Pérez", nota_final: 8 }, <br>
+            { dni: "23456789", nombre: "Ana", apellido: "Gómez", nota_final: 6 }, <br>
+            { dni: "34567890", nombre: "Carlos", apellido: "López", nota_final: 5 }, <br>
+            { dni: "45678901", nombre: "María", apellido: "Martínez", nota_final: 7 } <br>
+        ]; <br>
+        const cohorte02 = [ <br>
+            { dni: "56789012", nombre: "Sofía", apellido: "Ramírez", nota_final: 9 }, <br>
+            { dni: "67890123", nombre: "Luis", apellido: "Fernández", nota_final: 4 }, <br>
+            { dni: "78901234", nombre: "Elena", apellido: "Torres", nota_final: 5 } <br>
+        ]; <br>
+        const cohorte03 = [ <br>
+            { dni: "89012345", nombre: "Pedro", apellido: "Álvarez", nota_final: 10 }, <br>
+            { dni: "90123456", nombre: "Clara", apellido: "Méndez", nota_final: 3 }, <br>
+            { dni: "12345679", nombre: "Jorge", apellido: "Salinas", nota_final: 6 }, <br>
+            { dni: "23456780", nombre: "Andrea", apellido: "Cruz", nota_final: 2 }, <br>
+            { dni: "34567891", nombre: "Sergio", apellido: "Paredes", nota_final: 8 } <br>
+        ]; <br>
+        const cohorte04 = [ <br>
+            { dni: "45678902", nombre: "Lucía", apellido: "Ortiz", nota_final: 7 }, <br>
+            { dni: "56789013", nombre: "Miguel", apellido: "Vega", nota_final: 4 }, <br>
+            { dni: "67890124", nombre: "Raquel", apellido: "Silva", nota_final: 9 }, <br>
+            { dni: "78901235", nombre: "Hugo", apellido: "Moreno", nota_final: 5 }, <br>
+            { dni: "89012346", nombre: "Natalia", apellido: "Quinteros", nota_final: 6 }, <br>
+            { dni: "90123457", nombre: "Diego", apellido: "Arce", nota_final: 3 } <br>
+        ];<br><br>
+
+        1) Realice una función, que reciba como parámetro un vector de alumnos (puede ser de cualquier <br>
+        cohorte) los recorra con un forEach y muestre por consola, el apellido y el nombre. <br>
+        Invoque esa misma función, pasándole como parámetro el vector de la cohorte01, luego el vector de <br>
+        la cohorte02 y así sucesivamente hasta la cuarta cohorte. <br><br>
+        2) El profesor desea unificar todos los alumnos en un solo vector, dado que estructuralmente son <br>
+        iguales, utilice spread operator para “unificar el contenido de las cuatro cohortes” en un solo <br>
+        vector. Muestre por consola el vector resultante. <br><br>
+        3) Sobre los datos unificados, cree dos vectores nuevos, uno puede llamarse alumnosAprobados y el otro alumnosDesaprobados. <br> 
+        Para crear el vector de alumnos aprobados, aplique el método filter sobre el Vector que tiene todos <br>
+        los alumnos cuando la nota > 5; Para crear el vector de alumnos desaprobados, aplique el método filter sobre el Vector que tiene <br>
+        todos los alumnos cuando la nota <= 5; <br><br>
+        4) Sobre el vector Total de alumnos (cuatro cohortes), aplique el método “sort” = ordenar y ordene los <br>
+        datos de todos esos alumnos por nota de menor a mayor. <br><br>
+        5) Sobre el vector Total de alumnos, realice una búsqueda de los siguientes alumnos aplicando el <br>
+        método “find” que tienen los vectores incorporados y busque algún alumno por su “dni”. El que ud. Desee. <br><br>
+        6) Sobre el vector Total de alumnos, deseamos “contabilizar” la cantidad de alumnos aprobados, es <br>
+        decir la cantidad de alumnos que tienen nota > 5; para ello utilicen el método reduce que tienen los <br>
+        vectores incorporados para contabilizar. Realice esto de dos formas <br><br>
+        a. Usando una arrow function que a dentro utilice un condicional if/else <br>para saber si la nota > 
+        5 y por lo tanto contabilizar los aprobados; <br><br>
+        b. Usando una arrow function que a dentro utilice un operador ternario para saber si la nota > 
+        5 y por lo tanto contabilizar los aprobados; <br>
+        Ambas formas deben llegar al mismo resultado, únicamente que se implementaron de dos formas <br>
+        diferentes.
+
+    </p>
+    <br><br><br><br>
+    <div>
+        <h2>Punto 1:</h2>
+        <label for="cohorte">Seleccione la cohorte: </label>
+        <select name="cohorte" id="cohorte">
+            <option value="1">Cohorte01</option>
+            <option value="2">Cohorte02</option>
+            <option value="3">Cohorte03</option>
+            <option value="4">Cohorte04</option>
+        </select>
+        <input type="button" value="Ver alumnos" id="btn_ver_alumnos">
+        <br><br><br>
+        <h2>Punto 2:</h2>
+        <input type="button" value="Unificar cohortes" id="btn_unificar">
+        <br><br><br>
+        <h2>Punto 3:</h2>
+        <input type="button" value="Mostrar aprobados" id="btn_aprobados">
+        <input type="button" value="Mostrar desaprobados" id="btn_desaprobados">
+        <br><br><br>
+        <h2>Punto 4:</h2>
+        <input type="button" value="Ordenar alumnos por nota" id="btn_ordenar">
+        <br><br><br>
+        <h2>Punto 5:</h2>
+        <input type="number" id="dni_alumno" placeholder="Ingrese un dni" min="0">
+        <input type="button" value="Buscar" id="btn_buscar">
+        <br><br><br>
+        <h2>Punto 6:</h2>
+        <input type="button" value="Contar alumnos aprobados por if/else" id="btn_contar_a">
+        <input type="button" value="Contar alumnos aprobados por ternario" id="btn_contar_b">
+        <br><br><br>
+    </div>
+    <br><br><br><br>
+    <script type="module" src="ejercicio18.js"></script>
+</body>
+</html>

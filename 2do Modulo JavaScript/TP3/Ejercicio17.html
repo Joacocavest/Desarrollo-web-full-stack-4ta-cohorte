@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+    <p>
+        <h1>Ejercicio 17</h1>
+        Realizar una aplicación web que permita calcular y determinar la dosis de insulina recomendada para un <br>
+        paciente diabético; Basada en tres datos importantes para el cálculo. <br>
+        1) Nivel de glucosa en sangre <br>
+        2) Peso Corporal (en kilogramos) <br>
+        3) Tipo de diabetes: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a. Tipo 1 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;b. Tipo 2  <br><br>
+        Para Tipo 1: El cálculo es el 50% del Peso corporal del paciente + el 50% del nivel de glucosa en sangre, <br>
+        este último término solamente si la glucosa es mayor a 180. <br>
+        Para Tipo 2: El cálculo es el 20% del Peso corporal del paciente + el 50% del nivel de glucosa en sangre, <br>
+        este último término solamente si la glucosa es mayor a  180. <br><br>
+        La función debe retornar la dosis de insulina recomendada y recibir como parámetros de entrada <br>
+        (argumentos) nivel de glucosa, peso corporal y tipo de diabetes.  <br>
+        Salidas de la aplicación: la aplicación debe indicar la insulina recomendada para el paciente.
+    </p>
+
+    <section style="background-color: #80be95; width:800px; height:500px">
+        <label for="ingresar_glucosa">Ingrese el nivel de glucosa en sangre: </label>
+        <input type="number" id="ingresar_glucosa" min="0" required> <br>
+        <label for="ingresar_peso">Ingrese el peso corporal: </label>
+        <input type="number" id="ingresar_peso" min="0" required> <br>
+        <label for="tipo_diabetes">Ingrese el tipo de diabetes:</label>
+        <select name="tipoDiabetes" id="tipo_diabetes">
+            <option value="1">Tipo 1</option>
+            <option value="2">Tipo 2</option>
+        </select>
+        <br>
+        <input type="button" value="Calcular dosis" id="btn_calcular">
+        <p id="resultado">
+
+        </p>
+    </section>
+    <script type="module" src="./Ejercicio17_vista.js"></script>
+</body>
+</html>

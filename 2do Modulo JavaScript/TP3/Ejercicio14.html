@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <p>
+        <h1>Ejercicio 14</h1>
+        Realizar un programa que permita ingresar el sueldo bruto de un <br> trabajador (esto lo puede hacer con un input numérico) y calcular su <br> sueldo neto, aplicando los siguientes descuentos obligatorios según la legislación <br> de Argentina. <br><br> 
+        • Aportes jubilatorios 11% <br>
+        • Obra Social 3% <br>
+        • PAMI 3% <br><br>
+        Nota: puede construir una arrow function que reciba dos parámetros (sueldoBruto,porcentaje) y que en función <br>
+        de esos dos datos calcule el descuento del aporte. Luego puede llamar a la misma función pasándole como <br>
+        parámetros los diferentes porcentajes que debe calcular 
+    </p>
+    
+    <section style="background-color: #80be95; width:800px; height:500px">
+        <label for="ingresar_sueldo_bruto">Ingrese su sueldo: </label>
+        <input type="number" id="ingresar_sueldo_bruto" min="0">
+        <br>
+        <select name="legislacion" id="select_legislacion" style="margin: 10px;">
+            <option value="1">Aportes jubilatorios</option>
+            <option value="2">Obra social</option>
+            <option value="3">PAMI</option>
+        </select>
+        <br>
+        <input type="button" value="Calcular sueldo neto" id="btnCalcularSueldo">
+        <br>
+        <p id="resultado">
+
+        </p>
+    </section>
+
+    <script src="/TP3/Ejercicio14_vista.js" type="module"></script>
+</body>
+</html>
